@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.20;
 
 /// @title DisperseOptimized
 /// @notice Batch‐send Ether or any ERC20 in a single transaction, minimizing gas
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "./openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "./openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract DisperseOptimized is ReentrancyGuard {
     event DispersedEther(uint256 totalAmount, uint256 recipientsCount);
